@@ -1,0 +1,35 @@
+<html>
+<title>Web Wiki Search</title>
+<head>
+</head>
+<body>
+
+<div id="searchPanel" class="container-fluid">
+	<div class="row-fluid">
+		<div align="center" class="page-header"><h1>Wikipedia Search</h1></div>
+		<div class="col-sm-4"></div>
+		<div id="centerContainer" align="center" class="col-sm-4">
+			<input onkeydown = "if (event.keyCode == 13) document.getElementById('findButton').click()" id="searchWiki" type="text" class="form-control" placeholder="Wiki Search...">
+			<h6 id="errorMessage"></h6>
+			<br>
+			<div class="btn-group">
+				<button id="findButton" onClick="javascript:enableContainer();" class="btn btn-primary">Find</button>
+				<button onClick="window.open('https://en.wikipedia.org/wiki/Special:Random','location=no,status=no,scrollbars=no,resizeable=yes,toolbar=no')"class="btn btn-primary">Random Article</button>
+			</div>	
+			<br><br><div id="operationStatus"></div>
+		</div>
+	</div>
+	<br>
+	<div id="wikiResultsContainer" class="container">
+
+	</div>
+</div>	
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<link rel="stylesheet" href="main.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

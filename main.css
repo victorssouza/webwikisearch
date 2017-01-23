@@ -1,0 +1,39 @@
+body {
+	background: #F0F0F0;
+	font-family: 'Cabin', sans-serif;
+}
+
+td, button {
+	font-family: 'Arial';
+}
+h1 {
+	
+}
+
+h6 {
+	color: #cc0000;
+}
+
+input[type=text] {
+    width: 170px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('imgs/search.png');
+	background-size: 20px 20px;
+    background-position: 07px 07px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.jumbotron {
+	background: white;
+}
